@@ -11,7 +11,17 @@ export const handlers = [
 		)
 	}),
 
-	rest.get('/api/hello', (req, res, ctx) => {
+	// rest.get('/api/hello', (req, res, ctx) => {
+	// 	return res(
+	// 		ctx.status(200),
+	// 		ctx.json({
+	// 			firstName: 'John',
+	// 			lastName: 'Maverick',
+	// 		})
+	// 	)
+	// }),
+
+	rest.get('/user', (req, res, ctx) => {
 		return res(
 			ctx.status(200),
 			ctx.json({
